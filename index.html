@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/jpeg" href="https://mail.google.com/mail/u/0?ui=2&ik=404252f76d&attid=0.1&permmsgid=msg-a:r-3788935890678754946&th=186b8cb756b5ace0&view=att&disp=safe&realattid=f_lexboiq90">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/jpeg" href="/images/Logo.jpg"/>
     <title>Rob.feketer3.Portfolio</title>
   </head>
     <!-- Desktop Navbar & Language Change Link-->
@@ -135,37 +134,39 @@
       </section>
       <section id="About-me" class="About-me">
         <a class="About-me-a" id="About-me-a"></a>
-        <div class="About-me-text">
+        <div class="About-me-content">
           <h1>I'm Rob</h1>
           <p>Goal oriented, disciplined, self motivated and 
             ambitious with ridiculously high dreams that
             I slowly but surely turn into reality.<br>
             For more technical and formal information here is <a id="Resume" href="#">My Resume</a>
             </p>
+            <div class="About-me-img">
+              <img src="/images/Me1.jpg" alt="">
+            </div>
         </div>
-        <div class="About-me-img">
-          <img src="/images/Me1.jpg" alt="">
-        </div>
+        
       </section>
       <section id="Contact" class="Contact">
         <a class="Contact-a" id="Contact-a"></a>
-        <div class="Contact-form">
-          <form action="">
-            <div class="Contact-box">
-              <div class="Contact-text">
-                <input type="text" id="Name" name="Name" placeholder="Name">
-                <input type="text" id="Email" name="Email" placeholder="Email">
-                <h1 class="Contact-email-h1">Email</h1>
-                <p class="Contact-email">rob.feketer3@gmail.com</p>
-                <div class="Contact-Logo">
-                  <button id="linkedin" href="https://www.linkedin.com/in/fekete-r%C3%B3bert-681167257" class='fa fa-linkedin'></button>
-                  <button id="github" href="https://github.com/robfeketer3" class='fa fa-github'></button>
-                </div>
-              </div>
-                <textarea id="Subject" name="Subject" placeholder="Subject" style="height:200px"></textarea>
-                <input id="button" type="submit" value="Submit">
-              </div>
-            </div>
+        <div class="container">
+          <h1>Email</h1>
+          <p>Rob.feketer3@gmail.com</p>
+          <div class="logo-container">
+            <img src="logo1.png" alt="Logo 1">
+            <img src="logo2.png" alt="Logo 2">
+          </div>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        
+            <input type="submit" value="Send">
           </form>
         </div>
         <footer>
