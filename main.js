@@ -73,5 +73,3 @@ navLinks.forEach((navLink, activeIndex) => {
 
 
 
-
-

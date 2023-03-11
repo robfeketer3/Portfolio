@@ -567,6 +567,7 @@
     transition: ease-in-out 0.5s;
     font-size: 3vh;
     margin: 2vh;
+    padding: 5px;
   }
 
   .Projects-card button:hover {
