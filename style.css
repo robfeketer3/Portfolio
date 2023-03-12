@@ -433,7 +433,7 @@
     position: relative;
     max-height: none;
     flex-direction: column;
-    max-height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
   }
   
@@ -463,27 +463,25 @@
   
   #slide-columns {
     position: relative; 
-    top: -47vh; 
-    left: 20vh;
+    top: -30vh; 
     justify-content: center;
-    transform: translateX(-30%); 
-    line-height: 4vh;
+    line-height: 3vh;
     column-gap: 20vw;
     z-index: 10;
+    left: -20px;
   }
   
   #slide-column {
-    font-size: 4.5vw;
-    width: auto;
+    font-size: 5vw;
     margin-top: 1vh;
-    margin-right: 5vw;
+    width: 100%;
   }
   
   .Quote {
-    font-size: 7vw;
+    font-size: 8vw;
     width: 80vw;
     left: 12vw;
-    top: -80vh;
+    top: -60vh;
     line-height: 4vh;
   }
   
@@ -494,7 +492,7 @@
   
   .image-links {
     padding: 0;
-    top: -70vh;
+    top: 10vh;
     margin-top: 10vh;
     font-size: 8vw;
     align-items: center;
