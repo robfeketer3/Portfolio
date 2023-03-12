@@ -55,6 +55,7 @@
   }
 
   .Contact{
+    position: relative;
     max-width: 100vw;
     min-height: 100vh;
     background-color: var(--main-clr-w);
@@ -788,27 +789,16 @@
     color: white;
   }
 
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-    
   footer {
+    background-color: var(--main-clr-b);
+    color: var(--main-clr-w);
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: absolute;
-    display: block;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin: auto;
-    z-index: 10;
-    width: 100vw;
-  }
-  
-  footer p {
-    z-index: 11;
+    bottom: 0;
     width: 100%;
   }
+    
+  
   
   
