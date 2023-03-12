@@ -441,7 +441,7 @@
     position: relative;
     width: 100%;
     left: auto;
-    top: auto;
+    top: -1vh;
   }
   
   #Profile-Pic {
