@@ -159,7 +159,7 @@
     opacity: 0;
   }
   
-   /* Mobile Navbar if screen smaller than 700px */
+   /* Mobile Navbar if screen smaller than 768px */
   
    @media only screen and (max-width: 768px) {
     
@@ -177,13 +177,15 @@
       visibility: visible;
       list-style: none;
       background-color: var(--main-clr-w);
-      position: fixed;
       top: 0;
       border: none;
       cursor: pointer;
       display: flex;
       padding: 0 0 0 0.5vw;
-      max-height: 4vh;
+      min-height: 4vh;
+      position: absolute;
+      left: 0.5vh;
+      z-index: 14;
     }
     
     .menu2 {
@@ -216,10 +218,21 @@
       border: 1px solid var(--main-clr-b);
       font-size: 2.5vw;
     }
+
+    .menu2-content a:hover {
+      background-color: var(--main-clr-b);
+      color: var(--main-clr-w);
+    }
     
     .show {
+      animation: menu2 0.5s;
       display: block;
       visibility: visible;
+    }
+
+    @keyframes menu2 {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   
     /* Fancy Hamburger Icon */
