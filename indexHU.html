@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="https://mail.google.com/mail/u/0?ui=2&ik=404252f76d&attid=0.1&permmsgid=msg-a:r-3788935890678754946&th=186b8cb756b5ace0&view=att&disp=safe&realattid=f_lexboiq90">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Rob.feketer3.Portfolio</title>
+  </head>
+    <!-- Desktop Navbar & Language Change Link-->
+  <body>
+    <div class="navbar">
+      <ul class="menu1">
+        <li class="menu1-items"><a href="#Home-a"><span>Kezdőlap</span><span>Kezdőlap</span></a></li>
+        <li class="menu1-items"><a href="#Projects-a"><span>Projektek</span><span>Projektek</span></a></li>
+        <li class="menu1-items"><a href="#About-me-a"><span>Rólam</span><span>Rólam</span></a></li>
+        <li class="menu1-items"><a href="#Contact-a"><span>Kapcsolat</span><span>Kapcsolat</span></a></li>
+        <li class="menu1-items" id="language"><a href="/index.html"><span>HU</span><span>EN</span></a></li>
+      </ul>
+    </div>
+    <!-- Mobile Navbar -->
+      <div class="menu2">
+        <button class="menu2-button" onclick="HamburgerMenu()"> <!-- I tried moving the svg to a seperate file but then the animation gives up -->
+          <svg class="ham ham6" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+            <path class="line middle" d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+            <path class="line bottom" d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+          </svg></button>
+      <div id="menu2-content" class="menu2-content">
+              <a href="#Home-a" class="link">Kezdőlap</a>
+              <a href="#Projects-a" class="link">Projektek</a>
+              <a href="#About-me-a" class="link">Rólam</a>
+              <a href="#Contact-a" class="link">Kapcsolat</a>
+            </div>
+          </div>
+    <main>
+      <section class="Home" aria-label="Home">
+        <a class="Home-a" id="Home-a"></a>
+        <div class="Home-carousel">
+          <div class="Home-carousel-slides">
+            <div class="slide">
+              <img id="Profile-Pic" src="/images/Profile-Pic (2).jpg" alt="">
+              <h1 id="Myname">Fekete Róbert</h1>
+              <h1 id="Mytitle">Front-End Szoftvermérnök</h1>
+            </div>
+            <div class="slide">
+            <div id="slide-columns">
+            <ul id="slide-column">
+                <li><span>CSS</span></li>
+                <li><span>HTML5</span></li>
+                <li><span>Javascript</span></li>
+                <li><span>Webfejlesztés</span></li>
+                <li><span>Reszponzív Webdesign</span></li>
+            </ul>
+            <ul id="slide-column">
+              <li><span>React.js</span></li>
+              <li><span>Nest.js</span></li>
+              <li><span>Redux</span></li>
+              <li><span>JQuery</span></li>
+              <li><span>Angular</span></li>
+            </ul>
+            </div>
+            </div>
+            <div class="slide">
+              <div class="Quote_container">
+                <p class="Quote">Számítógépes Szoftvermérnök<br>
+                  Codecademy, Sololearn</p>
+              </div>
+            </div>
+          </div>
+          <div class="image-overlays">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+            <ul class="image-links">
+              <li><a href="#" class="nav-link">Ki vagyok én?</a></li>
+              <li><a href="#" class="nav-link">Képességeim</a></li>
+              <li><a href="#" class="nav-link">Végzettségem</a></li>
+            </ul>
+          </div>   
+      </section>
+      <section id="Projects" class="Projects" aria-label="Projects">
+        <a class="Projects-a" id="Projects-a"></a>
+        <div class="Projects-cards">
+          <div class="Projects-card">
+            <video id="projects-video" autoplay loop poster="/images/Youtube Clone - Placeholder.jpg">
+              <source src="/gif/Youtube Clone.mp4" type="video/mp4">
+              Az Ön böngészője nem támogatja a video tag-et.
+            </video>
+            <h1>Youtube Klón</h1>
+              <ul id="projects-languages"> 
+                <li>JSX</li>
+                <li>Css</li>
+                <li>React.js</li>
+              </ul>            
+              <p class="projects-description">Reszponzív youtube klón, a RapidAPI és a material UI segítségével.</p>
+            <!-- <button><a href="public/build/index.html" target="_blank">Live Demo</a></button> -->
+            <button><a href="https://github.com/robfeketer3/Youtube_Clone" target="_blank">Forráskód</a></button>
+          </div>
+          <div class="Projects-card">
+            <video id="projects-video" autoplay loop poster="/images/Weather App - Placeholder.jpg">
+              <source src="/gif/Weather App.mp4" type="video/mp4">
+              Az Ön böngészője nem támogatja a video tag-et.
+            </video>
+            <h1>Időjárás alkalmazás</h1>
+              <ul id="projects-languages">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+              </ul> 
+              <p class="projects-description">Megjeleníti a felhasználó által megadott helyszín aktuális időjárási körülményeit az OpenWeatherMap API adatai alapján.</p>
+            <button ><a target="_blank" href="/Projects/Weather_App/index.html" class="button">Élő Demó</a></button>
+            <button ><a target="_blank" href="https://github.com/robfeketer3/Weather_App">Forráskód</a></button>
+          </div>
+          <div class="Projects-card">
+            <video id="projects-video" autoplay loop poster="/images/Color_Generator - Placeholder.jpg">
+              <source src="/gif/Color_Generator.mp4" type="video/mp4">
+              Az Ön böngészője nem támogatja a video tag-et.
+            </video>
+            <h1>Szín Generátor</h1>
+              <ul id="projects-languages"> 
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+              </ul>
+              <p class="projects-description">Teljesen véletlenszerű hexa szín generálása/<br> választ a 145 nevesített szín közül.</p>
+            <button><a href="/Projects/Color_Generator/index.html" target="_blank">Élő Demó</a></button>
+            <button><a href="https://github.com/robfeketer3/Color-Generator/tree/main/Color_Generator" target="_blank">Forráskód</a></button>
+          </div>
+        </div>        
+      </section>
+      <section id="About-me" class="About-me">
+        <a class="About-me-a" id="About-me-a"></a>
+        <div class="About-me-content">
+          <h1>Rob vagyok</h1>
+          <div class="About-me-text">
+          <p>Cél orientált, fegyelmezett, önálló motivációjú és ambiciózus, akinek nagyon magas álmai vannak, amiket lassan de biztosan valóra váltok.
+            További technikai és formális információkért itt találja az <a id="Resume" href="images/Fekete Róbert Önéletrajza.pdf" target="_blank">Önéletrajzomat</a>
+            </p>
+            <div class="About-me-img">
+              <img src="/images/Me1.jpg" alt="">
+            </div>
+        </div>
+        </div>
+      </section>
+      <section id="Contact" class="Contact">
+        <a class="Contact-a" id="Contact-a"></a>
+        <div class="container">
+          <form method="post" netlify>
+            <label for="name">Név</label>
+            <input type="text" id="name" name="name" placeholder="Adja meg a nevét" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Adja meg az e-mail címét" required>
+        
+            <label for="message">Üzenet</label>
+            <textarea id="message" name="message" placeholder="Adja meg az üzenetét" required></textarea>
+        
+            <input type="submit" value="Küldés">
+          </form>
+          <footer>
+            <p>© 2023 Rob.feketer3 Minden jog fenntartva.</p>
+          </footer>
+      </section>
+    </main>
+    <script src="/main.js" defer></script>
+  </body>
+</html>
